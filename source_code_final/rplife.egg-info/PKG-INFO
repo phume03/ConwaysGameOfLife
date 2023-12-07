@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: rplife
+Version: 1.0.0
+Summary: Conway's Game of Life in your terminal
+Author-email: Real Python <info@realpython.com>
+Description-Content-Type: text/markdown
+Requires-Dist: tomli; python_version < "3.11"
