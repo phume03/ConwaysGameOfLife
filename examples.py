@@ -1,4 +1,5 @@
 from rplife import grid, patterns
+from pprint import pprint
 
 """RPLife basic examples.
 
@@ -11,7 +12,7 @@ grid produces the same set of live cells that were used as the initial seed for 
 Blinker pattern is an oscillator pattern that evolves like this: the Blinker pattern displays three horizontal 
 alive cells in one generation and three vertical alive cells in the next generation.
 """
-blinker = patterns.Pattern("Blinker", {(2, 1), (2, 2), (2, 3)})
+blinker = patterns.Pattern.get_pattern("Blinker")
 grid = grid.LifeGrid(blinker)
 print(grid)
 
@@ -30,3 +31,5 @@ print(grid.as_string((0, 0, 5, 5)))
 grid.evolve()
 print(grid.as_string((0, 0, 5, 5)))
 
+# Get all RPLife prints
+pprint(patterns.Pattern.get_all_patterns())
