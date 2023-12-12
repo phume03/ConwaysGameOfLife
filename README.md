@@ -51,6 +51,13 @@ To execute `rplife`, go ahead and run the following command:
 ```
 
 
+## Other Project Objectives
+
+Implement other views: Having other views apart from the one based on curses would be a great addition to your project. For example, you could write a Tkinter view where you display the life grid in a GUI window.
+Add exciting new life patterns: Adding new life patterns to patterns.toml will allow you to explore other behaviors of the game.
+Change the rules: So far, you’ve been working with the traditional rules, where dead cells with three living neighbors are born, and living cells with two or three living neighbors survive. The shorthand for this is B3/S23, but there are several variations that use different rules to evolve to a new generation. Changing the rules allows you to experience other life-like universes.
+
+
 ## Acknowledgements
 
 Author: Real Python - Email: office@realpython.com
@@ -69,4 +76,26 @@ Distributed under the MIT license. See `LICENSE` for more information.
 
 * [Build Conway's Game of Life With Python](https://realpython.com/conway-game-of-life-python/)
 
-* [Get Your Own: Python Tricks Sample Chapter](https://realpython.com/bonus/python-tricks-sample-pdf/)
+* [Google Python Documentation](https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings)
+
+* [Official Python documentation standard](https://docutils.sourceforge.io/rst.html)
+
+* [NumPy/SciPy Documentation](https://numpydoc.readthedocs.io/en/latest/format.html)
+
+* [Epytext Documentation](https://epydoc.sourceforge.net/epytext.html)
+
+* [Sphinx: tools to auto-generate documentation](http://www.sphinx-doc.org/en/stable/)
+
+* [Epydoc: tool for generating API documentation for Python modules](http://epydoc.sourceforge.net/)
+
+* [Read The Docs: Automatic building, versioning, and hosting of docs](https://readthedocs.org/)
+
+* [Doxygen:	tool for generating documentation](https://www.doxygen.nl/manual/docblocks.html) 
+
+* [MkDocs: static site generator for project documentation using the Markdown](https://www.mkdocs.org/)
+
+* [pycco: “quick and dirty” documentation generator](https://pycco-docs.github.io/pycco/)
+
+* [doctest:	standard-library module for running usage examples](https://docs.python.org/3/library/doctest.html)
+
+* [The Documentation System](https://documentation.divio.com/)
