@@ -3,6 +3,8 @@ from time import sleep
 from rplife.grid import LifeGrid
 from rplife.patterns import Pattern
 
+__all__ = ["CursesView"]
+
 class CursesView:
     """Game of Life Text-Based User Interface (TUI) to display the game to screen
 

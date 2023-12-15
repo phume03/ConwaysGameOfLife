@@ -8,9 +8,11 @@ state, or seed. After the game starts, it requires no further input from an exte
 
 
 Modules:
+    __main__.py - starts the execution of rplife as a part of the __init__ entry-point.
     cli.py      - contains the command-line interface for the game.
     grid.py     - provides the LifeGrid implementation.
     patterns.py - handle the game’s patterns.
-    views.py    - implements a way to display the life grid and its evolution.
+    views.py    - implements curses to display the life grid and its evolution.
 
 """
+__version__ = "1.0.0"
