@@ -58,7 +58,7 @@ To execute `rplife`, go ahead and run the following command:
 To execute rplife examples, run:
 
 ```sh
-(devenv) $ python example.py
+(devenv) $ python examples.py
 ```
 
 
