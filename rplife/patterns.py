@@ -70,7 +70,7 @@ class Pattern:
             alive_cells={tuple(cell) for cell in toml_data["alive_cells"]},
         )
     
-    def get_pattern(name, filename=PATTERNS_FILE):
+    def get_pattern(name: str, filename=PATTERNS_FILE):
         """load the named pattern from the TOML file
 
         Parameters

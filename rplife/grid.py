@@ -1,4 +1,5 @@
 import collections
+from rplife.patterns import Pattern
 
 ALIVE = "♥"
 DEAD = "‧"
@@ -10,7 +11,7 @@ class LifeGrid:
     generation and providing a string representation of the grid for print out to the CLI.
 
     Attributes:
-        pattern : pattern
+        pattern : Pattern
             a pattern
 
     Methods:
@@ -26,7 +27,9 @@ class LifeGrid:
         __str__(self):
             a way to represent the containing object in a user-friendly manner
     """
-    def __init__(self, pattern):
+    pattern: Pattern
+
+    def __init__(self, pattern: Pattern):
         """RPLife grid initializer.
 
         Parameters

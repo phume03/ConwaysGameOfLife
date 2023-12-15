@@ -1,4 +1,6 @@
-from rplife import grid, patterns
+from rplife.grid import LifeGrid
+from rplife.patterns import Pattern
+from rplife.views import CursesView
 from pprint import pprint
 
 """RPLife basic examples.
@@ -12,8 +14,8 @@ grid produces the same set of live cells that were used as the initial seed for 
 Blinker pattern is an oscillator pattern that evolves like this: the Blinker pattern displays three horizontal 
 alive cells in one generation and three vertical alive cells in the next generation.
 """
-blinker = patterns.Pattern.get_pattern("Blinker")
-grid = grid.LifeGrid(blinker)
+blinker = Pattern.get_pattern("Blinker")
+grid = LifeGrid(blinker)
 print(grid)
 
 grid.evolve()
@@ -32,4 +34,16 @@ grid.evolve()
 print(grid.as_string((0, 0, 5, 5)))
 
 # Get all RPLife prints
-pprint(patterns.Pattern.get_all_patterns())
+pprint(Pattern.get_all_patterns())
+
+#RP Life with curses
+# ...
+from time import sleep
+sleep(5)
+pattern = "Glider Gun"
+pause = 10
+print(f"Launching curses '{pattern}' pattern in {pause} seconds...")
+sleep(pause)
+# ...
+CursesView(Pattern.get_pattern(pattern), gen=100).show()
+print(f"Done.")
