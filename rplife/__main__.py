@@ -22,14 +22,14 @@ Methods:
 def main():
     """starts the execution of rplife application
 
-        Parameters
-        ----------
-        none
+	Parameters
+	----------
+	none
 
-        Returns
-        -------
-        none
-        """
+	Returns
+	-------
+	none
+	"""
         
     args = get_command_line_args()
     View = getattr(views, args.view)
@@ -53,14 +53,14 @@ def main():
 def _show_pattern(View, pattern: Pattern, args):
     """a helper function to display the patterns for rplife.
 
-        Parameters
-        ----------
-        none
+	Parameters
+	----------
+	none
 
-        Returns
-        -------
-        none
-        """
+	Returns
+	-------
+	none
+	"""
         
     try:
         View(pattern = pattern, 
