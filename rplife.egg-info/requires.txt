@@ -1,0 +1,9 @@
+
+[:python_version < "3.11"]
+tomli
+
+[:python_version >= "2.3"]
+windows-curses
+
+[:python_version >= "7.4"]
+pytest

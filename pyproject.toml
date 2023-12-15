@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rplife"
+dynamic = ["version"]
+description = "Conway's Game of Life, by Real Python, in your terminal"
+readme = "README.md"
+authors = [{ name = "Real Python", email = "info@realpython.com" }]
+dependencies = [
+    'tomli; python_version < "3.11"',
+    'pytest; python_version >= "7.4"',
+    'windows-curses; python_version >= "2.3"',
+]
+license = {file = "LICENSE"}
+
+[tool.setuptools]
+packages = ["rplife"]
+
+[project.scripts]
+rplife = "rplife.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "rplife.__version__"}
+

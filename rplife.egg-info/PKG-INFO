@@ -1,3 +1,15 @@
+Metadata-Version: 2.1
+Name: rplife
+Version: 1.0.0
+Summary: Conway's Game of Life, by Real Python, in your terminal
+Author-email: Real Python <info@realpython.com>
+License: Describes the license that the project is using.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tomli; python_version < "3.11"
+Requires-Dist: pytest; python_version >= "7.4"
+Requires-Dist: windows-curses; python_version >= "2.3"
+
 # `rplife` #
 
 [Wikipedia says that](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) **the Game of Life** (also known simply as **Life** -- **rplife**), is a [cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) devised by the British mathematician John Horton Conway in 1970. It is a zero-player game. Thus gameplay is determined by the initial state, or seed. Then, the game requires no further input. It can be said that your only interaction with the system is in the initial configuration and observing how the game develops/evolves. 
@@ -21,9 +33,8 @@ The first generation is created by applying the above rules simultaneously to ev
 [Here](https://academo.org/demos/conways-game-of-life/) is an online implementation of the game of life. If you cannot run my code using your own machine, you are free to follow that link and find out what the excitement is all about.
 
 
-## Installing and Running ##
 
-### Installation ###
+## Installation ##
 
 1. Create and activate a Python virtual environment. You may have to point to the entire python path depending on the version of python that you wish to run e.g. Python2, Python3, etc:
 
@@ -47,7 +58,7 @@ $ source devenv/Scripts/activate
 ```
 
 
-### Execution ###
+## Execution
 
 To execute `rplife`, go ahead and run the following command:
 
@@ -55,38 +66,29 @@ To execute `rplife`, go ahead and run the following command:
 (devenv) $ rplife -a
 ```
 
-To execute rplife examples, run:
 
-```sh
-(devenv) $ python example.py
-```
+## Other Project Objectives
 
-
-
-## Other Project Objectives ##
-
-* Implement other views: Having other views apart from the one based on curses would be a great addition to your project. For example, you could write a Tkinter view where you display the life grid in a GUI window.
-
-* Change the rules: So far, you’ve been working with the traditional rules, where dead cells with three living neighbors are born, and living cells with two or three living neighbors survive. The shorthand for this is B3/S23, but there are several variations that use different rules to evolve to a new generation. Changing the rules allows you to experience other life-like universes.
+Implement other views: Having other views apart from the one based on curses would be a great addition to your project. For example, you could write a Tkinter view where you display the life grid in a GUI window.
+Add exciting new life patterns: Adding new life patterns to patterns.toml will allow you to explore other behaviors of the game.
+Change the rules: So far, you’ve been working with the traditional rules, where dead cells with three living neighbors are born, and living cells with two or three living neighbors survive. The shorthand for this is B3/S23, but there are several variations that use different rules to evolve to a new generation. Changing the rules allows you to experience other life-like universes.
 
 
-## Acknowledgements ##
+## Acknowledgements
 
 Author: Real Python - Email: office@realpython.com
-
 Editor/Learner: Phume - Email: NA
-
 
 Why does it matter to acknowledge? Well, the guys at Real Python sell coursework, work you would otherwise produce at a university or other... for a fee. You are seeing this, not as a template but worked on my repo. So, I completed that work, or edited their templates. If you take anything from this work (rplife), I only care you know not to ask them why things work a particular way, it will largely be my responsibility to explain that. So, if their course changes and you feel this work misrepresents a thing or ruins your experience, it is because I will not try to keep up with them, I did it, finished, and moved on. But it might still help you to read someone else's code... legally! 
 
 Side story: before I went to University it was like there was no source code in the wild or you had to hack to get it... what rubbish, who wants that, you might hack to get EAs Doom but not to read the source... I was cool... but as we graduated we were struck/petrified by the fear of having to read someone else's code, if you completed (wrote, proof read/checked) senior level cs-coding assignments you get me... stuff's long... your first 1000 lines of code maybe... sheesh.
 
 
-## License ##
+## License
 
 Distributed under the MIT license. See `LICENSE` for more information.
 
-## Resources ##
+## Resources
 
 * [Build Conway's Game of Life With Python](https://realpython.com/conway-game-of-life-python/)
 
